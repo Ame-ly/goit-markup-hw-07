@@ -1,0 +1,70 @@
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team {
+  background-color: $for-team;
+}
+.menu-team {
+  display: flex;
+  /* padding: -30px 0; */
+  background-color: var(--primary-bg-color);
+}
+
+.menu-team > .team-card {
+  width: calc((100% - 90px) / 4);
+
+  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2); */
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-card {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background: $white;
+}
+
+.menu-team > .team-card + .team-card {
+  margin-left: 30px;
+}
+
+.menu-team .info {
+  padding: 30px 32px;
+}
+
+.info .p-title {
+  margin-bottom: 10px;
+
+  @include fonts(16px, 500, 1.19, 0.03em);
+
+  //   font-weight: 500;
+  //   font-size: 16px;
+  //   line-height: 1.19;
+  //  letter-spacing: 0.03em;
+
+  text-align: center;
+
+  color: $title-text-color;
+}
+
+.info > .text {
+  margin-bottom: 16px;
+  @include fonts(16px, 400, 1.19, 0.03em);
+  // font-weight: 400;
+  // font-size: 16px;
+  // line-height: 1.19;
+  // letter-spacing: 0.03em;
+
+  text-align: center;
+  color: $main-text-color;
+}
+
+.team-card {
+  display: block;
+}
+
+.light {
+  fill: $social-link-color-default;
+}

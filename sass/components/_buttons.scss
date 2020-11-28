@@ -1,0 +1,96 @@
+.btn {
+  display: inline-block;
+  border: 0px solid transparent;
+  border-radius: 4px;
+  /* min-width: 103px; */
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title-text-color;
+  background-color: $for-team;
+  cursor: pointer;
+
+  transition: color $time $timing-function,
+    background-color $time $timing-function;
+
+  &:hover,
+  &:focus,
+  &:active {
+    display: inline-block;
+    border: 0px solid transparent;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    /* min-width: 103px; */
+    padding: 6px 22px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $white;
+    background-color: $accent-text-color;
+  }
+}
+
+.main-btn {
+  display: inline-block;
+  text-align: center;
+  border: 0px solid transparent;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 10px 32px;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+
+  background-color: $accent-text-color;
+  color: $white;
+  cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: none;
+    /* outline: none; */
+    box-shadow: none;
+    background-color: $white;
+    color: $accent-text-color;
+  }
+}
+
+.footer-button {
+  display: inline-flex;
+
+  margin-left: 12px;
+  padding: 10px 29px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: $white;
+  background: $accent-text-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+
+  &:focus {
+    background-color: $white;
+    color: $accent-text-color;
+  }
+
+  &:focus .footer-icon {
+    fill: $accent-text-color;
+  }
+}

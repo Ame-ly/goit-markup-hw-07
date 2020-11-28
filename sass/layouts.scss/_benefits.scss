@@ -1,0 +1,58 @@
+.section-tittle {
+  margin-top: 0%;
+  margin-bottom: 50px;
+
+  font-family: "Roboto", sans-serif;
+  @include fonts(14px, 900, 1.17, 0.03em);
+  // font-weight: 900;
+  // font-size: 36px;
+  // line-height: 1.17;
+  // text-align: center;
+  // letter-spacing: 0.03em;
+  color: $title-text-color;
+}
+
+.menu-benefits > .p-title {
+  margin-bottom: 10px;
+
+  font-family: "Roboto", sans-serif;
+  @include fonts(14px, 700, 1.14, 0.03em);
+  // font-weight: 700;
+  // font-size: 14px;
+  // line-height: 1.14;
+  // letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(title-text-color);
+}
+
+.menu-benefits > .item + .item {
+  margin-left: 30px;
+}
+
+.menu-benefits > .item {
+  width: calc((100% - 3 * 30px) / 4);
+}
+
+.menu-benefits .text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.menu-benefits .icon {
+  @extend %flex;
+  align-items: center;
+  height: 120px;
+  width: 270px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: $for-team;
+}
+
+.menu-benefits .svg-item {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+}

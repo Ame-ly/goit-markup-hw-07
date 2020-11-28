@@ -1,0 +1,75 @@
+.link-logo {
+  @extend %flex;
+
+  font-family: "Raleway", sans-serif;
+  @include fonts(26px, 700, 1.19, 0.03em);
+  color: $black;
+
+  & > span {
+    color: $accent-text-color;
+  }
+
+  &.inverse {
+    display: flex;
+    margin-bottom: 20px;
+    color: $white;
+  }
+}
+
+.link,
+.link-logo {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+
+  transition: color $time $timing-function, fill $time $timing-function;
+}
+
+.link:hover,
+.link:focus {
+  color: $accent-text-color;
+}
+
+.link-contacts:hover,
+.link-contacts:focus {
+  color: $accent-text-color;
+  fill: $accent-text-color;
+}
+
+.menu-item .menu-link,
+.menu-item .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: color $time $timing-function, fill $time $timing-function;
+}
+
+.menu-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-family: "Roboto", sans-serif;
+  @include fonts(14px, 500, 1.14, 0.02em);
+
+  color: $title-text-color;
+}
+
+.menu-link .header-container {
+  display: inline-flex;
+  align-items: center;
+}
+
+.social-link.light:hover {
+  fill: $white;
+  background-color: $accent-text-color;
+}
+
+.social-link.dark {
+  fill: $white;
+  background-color: $transparent-white-dark;
+}
+.social-link.dark:hover {
+  background-color: $accent-text-color;
+}
